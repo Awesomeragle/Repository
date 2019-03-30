@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/JavaScript" src="stepValueEvens.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+	<h1>Finding the Even Numbers</h1>
+	<form name="numberFun" onsubmit="return validateItems();" class="form-inline">
+		<div class="form-group">
+			<label for="number1">Starting Number</label>
+			<input type="number" class="form-control" id="number1">
+		</div>
+		<div class="form-group">
+			<label for="number2">Ending Number</label>
+			<input type="number" class="form-control" id="number2">
+		</div>
+		<div class="form-group">
+			<label for="stepNumber">Step</label>
+			<input type="number" class="form-control" id="stepNumber">
+		</div>
+		<button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+	</form>
+	<span id="information"></span>
+	<span id="allEvens"></span>
+</div>
